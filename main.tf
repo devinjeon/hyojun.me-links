@@ -14,3 +14,7 @@ module "links" {
     "wedding" = "http://dvmade.co.kr/invi/1536916904"
   }
 }
+
+output "target_domain_name" {
+  value = "${module.links.target_domain_name}"
+}
