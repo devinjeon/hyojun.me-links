@@ -2,7 +2,8 @@ resource "aws_api_gateway_rest_api" "links" {
   name        = "links"
   description = "Redirection"
 
-  endpoint_configuration { types = ["REGIONAL"]
+  endpoint_configuration {
+    types = ["REGIONAL"]
   }
 }
 
@@ -11,7 +12,8 @@ resource "aws_api_gateway_resource" "links" {
   parent_id   = "${aws_api_gateway_rest_api.links.root_resource_id}"
   path_part   = "${element(sort(keys(var.links)), count.index)}"
   count       = "${length(keys(var.links))}"
-} 
+}
+
 resource "aws_api_gateway_method" "links" {
   rest_api_id   = "${aws_api_gateway_rest_api.links.id}"
   resource_id   = "${aws_api_gateway_resource.links.*.id[count.index]}"
@@ -25,13 +27,14 @@ resource "aws_api_gateway_integration" "links" {
   resource_id = "${aws_api_gateway_resource.links.*.id[count.index]}"
   http_method = "${aws_api_gateway_method.links.*.http_method[count.index]}"
   type        = "MOCK"
+
   request_templates = {
     "application/json" = <<EOF
 {"statusCode": 301}
 EOF
   }
 
-  count       = "${length(keys(var.links))}"
+  count = "${length(keys(var.links))}"
 }
 
 resource "aws_api_gateway_integration_response" "links" {
