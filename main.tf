@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "links" {
-  source = "github.com/devinjeon/terraform-redirect"
+  source = "github.com/DevinJeon/terraform-redirect?ref=1.0.0"
 
   acm_domain_name    = "*.hyojun.me"
   custom_domain_name = "links.hyojun.me"
