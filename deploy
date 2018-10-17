@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+HEAD="_HEAD.md"
+TAIL="_TAIL.md"
+README="README.md"
+
+# Reformat
+./terraform fmt
+
+# Make table of links
+links=$(grep -Pzo 'links = {[^}]+}' "main.tf" |\
+    grep -Pa -o1 '"([^ ]+)"\s+= "(.+)"$' |\
+    sed 's/"//g' |\
+    sed -r 's/ //g' |\
+    sed -r 's/=/|/g')
+
+echo "## Current links" > "$TAIL"
+echo "| Link | URL |" >> "$TAIL"
+echo "| - | - |" >> "$TAIL"
+
+for l in $links
+do
+    link=$(echo "$l" | cut -d '|' -f 1)
+    url=$(echo "$l" | cut -d '|' -f 2)
+    echo "| $link | $url |" >> "$TAIL"
+done
+
+# Merge markdown files
+cat "$HEAD" > "$README"
+echo '' >> "$README"
+cat "$TAIL" >> "$README"
+
+./terraform init --upgrade &&\
+    ./terraform plan -out="terraform.tfplan" &&\
+    ./terraform apply "terraform.tfplan" &&\
+    rm "terraform.tfplan"
+
+echo "* All complete! Please check git status and commit."
