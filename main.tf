@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "ap-northeast-1"
-}
-
 module "links" {
   source = "github.com/DevinJeon/terraform-redirect?ref=1.0.0"
 
