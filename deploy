@@ -6,29 +6,6 @@ README="README.md"
 # Reformat
 ./terraform fmt
 
-# Make table of links
-links=$(grep -Pzo 'links = {[^}]+}' "main.tf" |\
-    grep -Pao '[^#]\s+"([^ ]+)"\s+= "(.+)"$' |\
-    sed 's/"//g' |\
-    sed -r 's/ //g' |\
-    sed -r 's/=/|/g')
-
-echo "## Current links" > "$TAIL"
-echo "| Link | URL |" >> "$TAIL"
-echo "| - | - |" >> "$TAIL"
-
-for l in $links
-do
-    link=$(echo "$l" | cut -d '|' -f 1)
-    url=$(echo "$l" | cut -d '|' -f 2)
-    echo "| $link | $url |" >> "$TAIL"
-done
-
-# Merge markdown files
-cat "$HEAD" > "$README"
-echo '' >> "$README"
-cat "$TAIL" >> "$README"
-
 # NOTE: If the order of the keys in the `links` variable is changed,
 # it is not guaranteed that the `aws_api_gateway_resource` resources
 # will be regenerated after all resources being destroyed.
@@ -36,7 +13,6 @@ cat "$TAIL" >> "$README"
 # yet been destroyed, you will have problems.
 # So I intended to destroy all `aws_api_gateway_resource`
 # with `terraform destroy` command.(This is not a good way)
-
 destroy_aws_api_gateway_resources_will_modified () {
     TEMP_FILE=".temp_plan_output"
 
@@ -60,5 +36,28 @@ destroy_aws_api_gateway_resources_will_modified () {
     ./terraform plan -out="terraform.tfplan" &&\
     ./terraform apply "terraform.tfplan" &&\
     rm "terraform.tfplan"
+
+# Update README.md: table of links
+links=$(grep -Pzo 'links = {[^}]+}' "main.tf" |\
+    grep -Pao '[^#]\s+"([^ ]+)"\s+= "(.+)"$' |\
+    sed 's/"//g' |\
+    sed -r 's/ //g' |\
+    sed -r 's/=/|/g')
+
+echo "## Current links" > "$TAIL"
+echo "| Link | URL |" >> "$TAIL"
+echo "| - | - |" >> "$TAIL"
+
+for l in $links
+do
+    link=$(echo "$l" | cut -d '|' -f 1)
+    url=$(echo "$l" | cut -d '|' -f 2)
+    echo "| $link | $url |" >> "$TAIL"
+done
+
+# Merge markdown files
+cat "$HEAD" > "$README"
+echo '' >> "$README"
+cat "$TAIL" >> "$README"
 
 echo "* All complete! Please check git status and commit."
