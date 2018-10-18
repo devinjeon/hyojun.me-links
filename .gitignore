@@ -33,4 +33,5 @@ override.tf.json
 *.tfplan.*
 
 terraform
+.temp_plan_output
 # End of https://www.gitignore.io/api/terraform
