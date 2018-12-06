@@ -1,5 +1,5 @@
 module "links" {
-  source = "github.com/DevinJeon/terraform-redirect?ref=1.0.0"
+  source = "github.com/DevinJeon/terraform-redirect?ref=1.0.1"
 
   acm_domain_name    = "*.hyojun.me"
   custom_domain_name = "links.hyojun.me"
