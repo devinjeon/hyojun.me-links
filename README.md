@@ -1,7 +1,10 @@
 # hyojun.me-links
 Custom short links.(using [terraform-redirect](https://github.com/devinjeon/terraform-redirect))
 
-## Current links
+## Example
+* https://links.hyojun.me/google
+
+### List of all links
 | Link | URL |
 | - | - |
 | ndc18 | https://www.slideshare.net/ssuser380e9c/ndc18-95524337 |
@@ -9,3 +12,4 @@ Custom short links.(using [terraform-redirect](https://github.com/devinjeon/terr
 | github | https://github.com/devinjeon |
 | portfolio | https://hyojun.me/portfolio/ |
 | vin.sh | https://github.com/devinjeon/vin.sh |
+| google | https://google.com |

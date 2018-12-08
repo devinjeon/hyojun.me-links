@@ -19,7 +19,6 @@ destroy_aws_api_gateway_resources_will_modified () {
     ./terraform plan > "$TEMP_FILE"
     resources=$(grep -Pao '[+-~].+module\.links\.aws_api_gateway_resource.links\[\d+\]' "$TEMP_FILE")
 
-
     echo "$resources"
     # shellcheck disable=SC2086
     (echo "$resources" | grep -q "module.links.aws_api_gateway_resource.links") &&\
@@ -44,7 +43,7 @@ links=$(grep -Pzo 'links = {[^}]+}' "main.tf" |\
     sed -r 's/ //g' |\
     sed -r 's/=/|/g')
 
-echo "## Current links" > "$TAIL"
+echo "### List of all links" > "$TAIL"
 echo "| Link | URL |" >> "$TAIL"
 echo "| - | - |" >> "$TAIL"
 
