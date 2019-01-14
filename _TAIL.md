@@ -6,4 +6,3 @@
 | github | https://github.com/devinjeon |
 | portfolio | https://hyojun.me/portfolio/ |
 | vin.sh | https://github.com/devinjeon/vin.sh |
-| google | https://google.com |
