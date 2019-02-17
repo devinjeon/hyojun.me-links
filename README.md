@@ -9,9 +9,11 @@ Custom short links.(using [terraform-redirect](https://github.com/devinjeon/terr
 ### List of all links
 | Link | URL |
 | - | - |
-| ndc18 | https://www.slideshare.net/ssuser380e9c/ndc18-95524337 |
-| ndc18-2 | https://www.slideshare.net/ssuser380e9c/ndc18-2-95522893 |
-| github | https://github.com/devinjeon |
-| vin.sh | https://github.com/devinjeon/vin.sh |
-| resume | https://www.notion.so/devinjeon/Hyojun-Jeon-e096c75cae4b4296a63233ab446a57ae |
-| resume-ko | https://www.notion.so/devinjeon/dd9c03879a084c74b5a0ae179228badb |
+| https://hyojun.me/~google | https://www.google.com |
+| https://hyojun.me/~ndc18 | https://www.slideshare.net/ssuser380e9c/ndc18-95524337 |
+| https://hyojun.me/~ndc18-2 | https://www.slideshare.net/ssuser380e9c/ndc18-2-95522893 |
+| https://hyojun.me/~linkedin | https://www.linkedin.com/in/devinjeon/ |
+| https://hyojun.me/~github | https://github.com/devinjeon |
+| https://hyojun.me/~vin.sh | https://github.com/devinjeon/vin.sh |
+| https://hyojun.me/~resume | https://www.notion.so/devinjeon/Hyojun-Jeon-e096c75cae4b4296a63233ab446a57ae |
+| https://hyojun.me/~resume-ko | https://www.notion.so/devinjeon/dd9c03879a084c74b5a0ae179228badb |
