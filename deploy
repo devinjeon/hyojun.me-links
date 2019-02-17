@@ -51,7 +51,7 @@ for l in $links
 do
     link=$(echo "$l" | cut -d '|' -f 1)
     url=$(echo "$l" | cut -d '|' -f 2)
-    echo "| $link | $url |" >> "$TAIL"
+    echo "| https://hyojun.me/~$link | $url |" >> "$TAIL"
 done
 
 # Merge markdown files
