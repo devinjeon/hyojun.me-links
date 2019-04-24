@@ -2,7 +2,7 @@
 
 sudo apt install wget zip
 
-VERSION="0.11.8"
+VERSION="0.11.13"
 FILENAME="terraform_${VERSION}_linux_amd64.zip"
 
 wget "https://releases.hashicorp.com/terraform/$VERSION/$FILENAME"
