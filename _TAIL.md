@@ -2,8 +2,7 @@
 | Link | URL |
 | - | - |
 | https://hyojun.me/~google | https://www.google.com |
-| https://hyojun.me/~ndc18 | https://www.slideshare.net/ssuser380e9c/ndc18-95524337 |
-| https://hyojun.me/~ndc18-2 | https://www.slideshare.net/ssuser380e9c/ndc18-2-95522893 |
+| https://hyojun.me/~ndc18 | https://speakerdeck.com/devinjeon/ndc18-yasaengyi-ddang-dyuranggoyi-deiteo-enjinieoring-iyagi-rogeu-siseutem-gucug-gyeongheom-gongyu |
 | https://hyojun.me/~linkedin | https://www.linkedin.com/in/devinjeon/ |
 | https://hyojun.me/~github | https://github.com/devinjeon |
 | https://hyojun.me/~vin.sh | https://github.com/devinjeon/vin.sh |
