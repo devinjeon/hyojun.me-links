@@ -14,6 +14,7 @@ module "links" {
     "google"      = "https://www.google.com"
     "ndc18"       = "https://github.com/devinjeon/NDC18"
     "ndc18-slide" = "https://speakerdeck.com/devinjeon/ndc18-yasaengyi-ddang-dyuranggoyi-deiteo-enjinieoring-iyagi-rogeu-siseutem-gucug-gyeongheom-gongyu"
+    "ndc19"       = "https://github.com/devinjeon/NDC19"
     "linkedin"    = "https://www.linkedin.com/in/devinjeon/"
     "github"      = "https://github.com/devinjeon"
     "vin.sh"      = "https://github.com/devinjeon/vin.sh"

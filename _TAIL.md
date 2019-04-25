@@ -4,6 +4,7 @@
 | https://hyojun.me/~google | https://www.google.com |
 | https://hyojun.me/~ndc18 | https://github.com/devinjeon/NDC18 |
 | https://hyojun.me/~ndc18-slide | https://speakerdeck.com/devinjeon/ndc18-yasaengyi-ddang-dyuranggoyi-deiteo-enjinieoring-iyagi-rogeu-siseutem-gucug-gyeongheom-gongyu |
+| https://hyojun.me/~ndc19 | https://github.com/devinjeon/NDC19 |
 | https://hyojun.me/~linkedin | https://www.linkedin.com/in/devinjeon/ |
 | https://hyojun.me/~github | https://github.com/devinjeon |
 | https://hyojun.me/~vin.sh | https://github.com/devinjeon/vin.sh |
