@@ -16,6 +16,7 @@ Custom short links.(using [terraform-redirect](https://github.com/devinjeon/terr
 | https://hyojun.me/~ndc19 | https://github.com/devinjeon/ndc19 |
 | https://hyojun.me/~ndc19-slide | https://speakerdeck.com/devinjeon/ndc19-joheun-rogeuran-mueosinga-joheun-rogeureul-wihae-goryeohaeya-hal-geosdeul |
 | https://hyojun.me/~ndc19-caption | https://speakerdeck.com/devinjeon/jamag-ndc19-joheun-rogeuran-mueosinga-joheun-rogeureul-wihae-goryeohaeya-hal-geosdeul |
+| https://hyojun.me/~sd | https://speakerdeck.com/devinjeon |
 | https://hyojun.me/~linkedin | https://www.linkedin.com/in/devinjeon/ |
 | https://hyojun.me/~github | https://github.com/devinjeon |
 | https://hyojun.me/~vin.sh | https://github.com/devinjeon/vin.sh |

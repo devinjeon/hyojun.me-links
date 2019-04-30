@@ -18,6 +18,7 @@ module "links" {
     "ndc19"         = "https://github.com/devinjeon/ndc19"
     "ndc19-slide"   = "https://speakerdeck.com/devinjeon/ndc19-joheun-rogeuran-mueosinga-joheun-rogeureul-wihae-goryeohaeya-hal-geosdeul"
     "ndc19-caption" = "https://speakerdeck.com/devinjeon/jamag-ndc19-joheun-rogeuran-mueosinga-joheun-rogeureul-wihae-goryeohaeya-hal-geosdeul"
+    "sd"            = "https://speakerdeck.com/devinjeon"
     "linkedin"      = "https://www.linkedin.com/in/devinjeon/"
     "github"        = "https://github.com/devinjeon"
     "vin.sh"        = "https://github.com/devinjeon/vin.sh"
