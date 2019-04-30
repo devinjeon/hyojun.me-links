@@ -12,9 +12,11 @@ module "links" {
 
   links = {
     "google"        = "https://www.google.com"
-    "ndc18"         = "https://speakerdeck.com/devinjeon/ndc18-yasaengyi-ddang-dyuranggoyi-deiteo-enjinieoring-iyagi-rogeu-siseutem-gucug-gyeongheom-gongyu"
+    "ndc18"         = "https://github.com/devinjeon/ndc18"
+    "ndc18-slide"   = "https://speakerdeck.com/devinjeon/ndc18-yasaengyi-ddang-dyuranggoyi-deiteo-enjinieoring-iyagi-rogeu-siseutem-gucug-gyeongheom-gongyu"
     "ndc18-caption" = "https://speakerdeck.com/devinjeon/jamag-ndc18-yasaengyi-ddang-dyuranggoyi-deiteo-enjinieoring-iyagi-rogeu-siseutem-gucug-gyeongheom-gongyu"
-    "ndc19"         = "https://speakerdeck.com/devinjeon/ndc19-joheun-rogeuran-mueosinga-joheun-rogeureul-wihae-goryeohaeya-hal-geosdeul"
+    "ndc19"         = "https://github.com/devinjeon/ndc19"
+    "ndc19-slide"   = "https://speakerdeck.com/devinjeon/ndc19-joheun-rogeuran-mueosinga-joheun-rogeureul-wihae-goryeohaeya-hal-geosdeul"
     "ndc19-caption" = "https://speakerdeck.com/devinjeon/jamag-ndc19-joheun-rogeuran-mueosinga-joheun-rogeureul-wihae-goryeohaeya-hal-geosdeul"
     "linkedin"      = "https://www.linkedin.com/in/devinjeon/"
     "github"        = "https://github.com/devinjeon"
