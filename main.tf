@@ -1,5 +1,6 @@
 locals {
   cloudflare_domain  = "hyojun.me"
+  cloudflare_zond_id = "0d9d60efac68c26ab7e8a06dbd69d192"
   acm_domain_name    = "*.hyojun.me"
   custom_domain_name = "links.hyojun.me"
 }
@@ -41,8 +42,8 @@ module "links" {
 
 # 1. Create record -> links.{your_domain}
 resource "cloudflare_record" "links" {
-  domain = "${local.cloudflare_domain}"
-  name   = "links"
+  name    = "links"
+  zone_id = "${local.cloudflare_zond_id}"
 
   value   = "${module.links.target_domain_name}"
   type    = "CNAME"
@@ -51,8 +52,8 @@ resource "cloudflare_record" "links" {
 
 # 2. Make page rules for forwarding url
 resource "cloudflare_page_rule" "links" {
-  zone   = "${local.cloudflare_domain}"
-  target = "${local.cloudflare_domain}/~*"
+  zone_id = "${local.cloudflare_zond_id}"
+  target  = "${local.cloudflare_domain}/~*"
 
   actions = {
     forwarding_url {
