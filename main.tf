@@ -27,6 +27,7 @@ module "links" {
     "vin.sh"             = "https://github.com/devinjeon/vin.sh"
     "resume"             = "https://www.notion.so/devinjeon/Hyojun-Jeon-e096c75cae4b4296a63233ab446a57ae"
     "resume-ko"          = "https://www.notion.so/devinjeon/dd9c03879a084c74b5a0ae179228badb"
+    "monpi"              = "https://monpi.hyojun.me"
   }
 }
 
