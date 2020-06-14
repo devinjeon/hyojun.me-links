@@ -17,3 +17,4 @@
 | https://hyojun.me/~resume | https://www.notion.so/devinjeon/Hyojun-Jeon-e096c75cae4b4296a63233ab446a57ae |
 | https://hyojun.me/~resume-ko | https://www.notion.so/devinjeon/dd9c03879a084c74b5a0ae179228badb |
 | https://hyojun.me/~monpi | https://monpi.hyojun.me |
+| https://hyojun.me/~myip | https://d.hyojun.me/myip |
